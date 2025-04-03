@@ -2,7 +2,7 @@
 #실행 속도 향상을 위한 임시 파일. git에 포함할 필요 없음.
 __pycache__/
 *.py[cod]
-*.Pyo
+*.pyo
 *.pyd
 
 # === 2. 가상환경 폴더 ===
@@ -20,7 +20,7 @@ __pycache__/
 
 #=== 5. 운영체제에서 자동 생성되는 불피요한 파일 ===
 # Mac과 Window에서 자동 생성됨. 프로젝트와 무관함.
-.DS_store
+.DS_Store
 Thumbs.db
 
 # === 6. 테스트 도구 실행 결과 파일 ===
@@ -29,7 +29,7 @@ Thumbs.db
 *.cover
 .coverage
 .cache/
-htmcov/
+htmlcov/
 
 #=== 7. pip 설치 로그 파일 ===
 # pip 사용 시 발생할 수 있는 로그. poetry 사용 시 생성되지 않음.
