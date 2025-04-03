@@ -16,12 +16,12 @@ class Item(BaseModel):
     name: str
     description: str
     
-    #GET 요청: 특정 아이템 조회 가능
+    # GET 요청: 특정 아이템 조회 기기능
     @app.get("/items/{item_id}")
     def read_item(item_id: int):
     # 아이템이 존재하는 경우 > 해당 아이템 반환
     if item_id in items:
-        return item{item_id}
+        return items[item_id]
     #아이템이 없는 경우> 에러 메시지 반환
     return {"error": " Item not found"}
 
